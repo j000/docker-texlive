@@ -6,4 +6,5 @@ RUN echo 'http://dl-cdn.alpinelinux.org/alpine/edge/main' >> /etc/apk/repositori
 
 RUN apk add --no-cache \
     git \
+    make \
     texlive-full
