@@ -1,9 +1,7 @@
-FROM alpine:edge
+FROM opensuse:latest
 
-RUN echo 'http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories
-
-RUN apk add --no-cache \
+RUN zypper --non-interactive install --no-recommends \
     inkscape \
     git \
     make \
-    texlive-full
+    texlive-collection-latex
